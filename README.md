@@ -4,8 +4,8 @@
 Constracturs:
 Fraction();
 Fraction(double);
-Fraction(int x, int y);
-Fraction(const Fraction& other);
+Fraction(int, int);
+Fraction(const Fraction&);
 
 Overloaded operators:
 The + operator to add two fractions and return their sum as another fraction in reduced form.
