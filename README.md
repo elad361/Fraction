@@ -2,10 +2,10 @@
  Represents a fraction of two integers.
  
 Constracturs:
-Fraction();
-Fraction(double);
-Fraction(int, int);
-Fraction(const Fraction&);
+* Fraction();
+* Fraction(double);
+* Fraction(int, int);
+* Fraction(const Fraction&);
 
 Overloaded operators:
 * The + operator to add two fractions and return their sum as another fraction in reduced form.
