@@ -1,7 +1,7 @@
 # Fraction
  Represents a fraction of two integers.
  
-Constracturs:
+Constructurs:
 * Fraction();
 * Fraction(double);
 * Fraction(int, int);
