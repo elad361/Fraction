@@ -51,6 +51,18 @@ Fraction::Fraction(double other) {
     }
 }
 
+Fraction& Fraction::operator= (const Fraction& other) {
+    numerator = other.numerator;
+    denominator = other.denominator;
+
+    return *this;
+}
+
+void Fraction::operator= (double d) {
+    Fraction f(d);
+    *this = f;
+}
+
 Fraction Fraction::operator+ (double other) const {
     Fraction f(other);
     return operator+(f);
