@@ -23,10 +23,7 @@ public:
     Fraction() : numerator(0), denominator(1) {}
     Fraction(double);
     Fraction(int x, int y);
-    Fraction(const Fraction& other) : numerator(other.numerator) , denominator(other.denominator) {
-        cout << "copy constr" << endl;
-        reduceByGcd();
-    }
+    Fraction(const Fraction& other) : numerator(other.numerator) , denominator(other.denominator) { reduceByGcd(); }
 
     // destructor
     ~Fraction() {}
