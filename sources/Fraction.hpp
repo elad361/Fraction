@@ -23,7 +23,10 @@ public:
     Fraction() : numerator(0), denominator(1) {}
     Fraction(double);
     Fraction(int x, int y);
-    Fraction(const Fraction& other) : numerator(other.numerator) , denominator(other.denominator) {}
+    Fraction(const Fraction& other) : numerator(other.numerator) , denominator(other.denominator) {
+        cout << "copy constr" << endl;
+        reduceByGcd();
+    }
 
     // destructor
     ~Fraction() {}
@@ -38,6 +41,9 @@ public:
     //----------------------------------------
     // binary operators
     //----------------------------------------
+    Fraction& operator= (const Fraction&);
+    void operator= (double);
+
     Fraction operator+ (const Fraction& other) const {return Fraction((numerator * other.denominator) + (other.numerator * denominator), denominator * other.denominator);}
     Fraction operator+ (double) const;
     friend Fraction operator+ (double, const Fraction&);
