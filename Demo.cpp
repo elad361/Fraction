@@ -26,11 +26,10 @@ int main() {
     Fraction c = a+b-1;
     cout << c++ << endl;
     cout << --c << endl;
-    cout << "Fraction(8.6): " << Fraction(8.6) << endl;
 
-    cout << "8.6 > Fraction(9, 2) ? : " << (8.6 > Fraction(9, 2)) << endl;
-    if (a == 0.8) cout << " a is similar 0.8" << endl;
-    else cout << " a is smaller than 0.8" << endl;
+    cout << "c >=b ? : " << (c >= b) << endl;
+    if (a > 1.1) cout << " a is bigger than 1.1" << endl;
+    else cout << " a is smaller than 1.1" << endl;
 
 
 }
